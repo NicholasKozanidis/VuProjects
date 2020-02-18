@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment 3 documentation</title>
+	</head>
+	<body>
+		<h1>Assignment 3 documentation</h1>
+		<h3>Introduction</h3>
+		<p>This is a short guide how to use our RESTful API server for phones. Provided are a python server, required plugins, 
+		and the database file. The following instructions can be input to the server using Postman or a similar program </p>
+		
+		<h3>Directions</h3>
+		<p>The server accepts POST, PUT, GET and DELETE requests. The URIs are as follows:
+		<ol>
+			<li>GET</li>
+			<li>
+				<ol>
+					<li>GET: Send a GET request to localhost:8080/api to get the list of phones stored in the database. If succesful, the server will return a list of phones in the database in a JSON format.</li>
+				</ol>
+			</li>
+			<li>POST</li>
+			<li>
+				<ol>
+					<li>POST: Send a POST request to localhost:8080/api to post a new entry. Enter the data in a json format with the following information (in order):
+					Brand, Screensize(int only), Image(url), Model, OS. An ID number will be automatically assigned for the entry, starting from 1. If succesful, the server
+					will return a success message.</li>
+				</ol>
+			</li>
+			<li>PUT</li>
+			<li>
+				<ol>
+					<li>PUT: Send a PUT request to localhost:8080/api/id. Replace id with the id number of the entry you want to change. You can find the id value through a GET request.
+					Enter the data in a json format with the following information (in order): Brand, Screensize(int only), Image(url), Model, OS. If succesful, the server will return a success message.</li>
+				</ol>
+			</li>
+			<li>DELETE</li>
+				<ol>
+					<li>DELETE: Send a DELETE request to localhost:8080/reset to delete the contents of the database file. If succesful, the server will return a success message.</li>
+				</ol>
+		</ol></p>
+	</body>
+</html>

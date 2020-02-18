@@ -1,0 +1,526 @@
+
+/*laptops & pc*/
+@media screen
+and (max-width:2760px){
+* {
+	max-width:100%;
+	height: auto;
+	
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	
+}
+
+body {
+	
+	background:#444;
+	color: white;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	
+	
+}
+
+#container{
+	margin: 0 auto;
+}
+
+#header, #footer{
+	
+	
+	background-color: #555;
+	color: #fff;
+	
+}
+
+#header{
+	padding:10px;
+	margin:10px;
+	text-indent:100px;
+	font-size:2vw;
+}
+
+#header p{
+	font-size: 1.5vw;
+}
+
+#header h1,p{
+	text-align: center;
+	text-indent: 0;
+}
+
+#main-content{
+	
+	font-weight: lighter;
+	text-align:center;
+	padding: 10px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 15px;
+	font-size: 1.5vw;
+	border: solid 1px white;
+	border-spacing: inherit;
+    overflow:auto;
+	
+}
+
+#main-content h4{
+	color:white;
+}
+
+#main-content table{
+border-collapse:separate; 
+border-spacing:3px;
+/*margin-bottom: 30px;*/
+font-size: larger;
+font-weight: bolder;
+width: 100%;
+}
+
+#main-content table, th, td{
+border: 1px solid white;
+border-collapse: collapse;
+}
+
+.sub_button{
+	background:none;
+	border: 2px solid;
+	border-bottom-width: 4px;
+	font: Montserrat, sans-serif;
+	letter-spacing: 0.125em;
+	text-align: center;
+	margin: 1em;
+	padding: 1em 2em;
+	text-transform: uppercase;
+	transition: color 1s;
+	font-size: 1.2vw;
+	cursor: pointer;
+	font-weight: bold;
+	filter: alpha(opacity=70);
+	color: #7cf07f;
+	}
+	
+	.sub_button:hover,
+	.sub_button:focus,
+	.res_button:hover,
+	.res_button:focus{
+		transform: translateY(-0.25em);
+		outline: none;	
+	}
+	
+	.sub_button:active, .res_button:active{
+		transform:scale(0.9);
+	}
+	
+	
+
+.res_button{
+	background:none;
+	border: 2px solid;
+	border-bottom-width: 4px;
+	font: Montserrat, sans-serif;
+	letter-spacing: 0.125em;
+	text-align: center;
+	margin: 1em;
+	padding: 1em 2em;
+	text-transform: uppercase;
+	transition: color 1s;
+	font-size: 1.2vw;
+	cursor: pointer;
+	font-weight: bold;
+	filter: alpha(opacity=70);
+	color: #f9879b;
+}
+
+
+
+fieldset{
+	
+	margin-bottom: 15px;
+	margin-left: 10px;
+	
+}
+
+th{
+	color: #A8E6CE;
+}
+
+
+caption{
+	text-align: center;
+	text-decoration: underline;
+	text-transform: uppercase;
+	caption-side: right;
+	
+}
+
+#navigator{
+	margin: 10px;
+	font-size: 1.5vw;
+}
+
+#navigator ul{
+	list-style-image:url('https://i.imgur.com/nHCqiZi.png');
+	list-style-position:inside;
+	
+}
+
+#navigator ul li{
+	margin: 0;
+	padding: 8px;
+	
+}
+
+#navigator a{
+	color:white;
+	text-decoration: none;
+	
+}
+
+#navigator a:hover{
+	color:#45ADA8;
+	font-size: 1.3vw;
+}
+
+
+
+caption{
+	caption-side:inherit;
+	color: #A8E6CE;
+}
+
+#table-special_offer td{
+padding: 15px;
+}
+
+#return-policy a{
+	color:white;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+#return-policy a:link{
+	font: italic small-caps normal 100% "Helvetica Neue", Arial, sans-serif;
+}
+
+#return-policy a:visited{
+	text-decoration: none;
+}
+
+#return-policy a:active{
+	color:hotpink;
+}
+
+input[type="text"]{
+	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+	border: solid 1px groove;	
+}
+
+#return-policy a:visited{
+	color:#45ADA8;
+	font-weight: normal;
+}
+
+#sidebar{
+	float:right;
+	clear:right;
+	font-size: 1.5vw;
+	font-variant: small-caps;
+	margin:10px;
+	
+}
+
+#table-special_offer {
+	font-weight: lighter;
+	text-aligh: center;
+	padding: 40px;
+	background:#555;
+	margin: 10px;
+	font-size: 1.5vw;
+}
+
+#return-policy{
+	margin: 15px 15px;
+	font-size: 1.5vw;
+}
+
+#footer{
+	
+	font-style: italic;
+	font-weight: bold;
+	text-indent: 450px;
+	margin: 10px;
+	padding: 10px;
+	font-size: 1.5vw;
+	background-size: contain;
+}
+
+
+
+
+#logo {
+	
+	display:block;
+	width: 280px;
+	margin: 10px auto;
+	background: none;
+}
+	
+	
+ol{
+	list-style: none;
+	padding: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 0em;
+
+}
+
+dl{
+	display: block;
+	border-color: #ccc;
+	border-style: double;
+	border-spacing: 0.5px;
+	border-width: 3px;
+	padding: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;	
+}
+
+dt{
+	float:left;
+	clear:left;
+	text-align: right;
+}
+
+dt::after{
+	content: ":";
+}
+dd {
+	margin: 0 0 0 110px;
+	padding: 0 0 0.5em 0;
+}
+
+ul{
+	
+	padding: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+
+h1, h2, h3{
+	color: #CC527a;
+	padding: 0 0 10px;
+	margin: 0 0 10px;
+}
+
+
+	
+
+}
+
+
+
+/* Phones landscape*/
+@media screen
+and (max-device-width:480px){
+
+
+#header{
+	text-indent:20px;
+	font-size:3vw;
+}
+
+#header p{
+	font-size:2.5vw;
+}
+
+#navigator{
+	
+	font-size: 2.5vw;
+	
+}
+
+#sidebar{
+	font-size:2.5vw;
+	float:none;
+	
+}
+
+#main-content{
+	
+	
+	font-size: 2.5vw;
+		
+}
+
+#main-content table{
+border-collapse:separate; 
+border-spacing:3px;
+font-size: larger;
+font-weight: bolder;
+width: 100%;
+}
+
+#main-content table, th, td{
+border: 1px solid white;
+border-collapse: collapse;
+}
+
+#main-content fieldset,legend{
+	width: 720px;
+	border-style: outset;
+}
+
+
+
+#table-special_offer{
+	font-size:4vw;
+}
+
+#return-policy{
+	font-size: 4vw;
+}
+
+#footer{
+	font-size: 3vw;
+	text-indent: 100px;
+	
+}
+
+#footer p{
+	position: relative;
+	bottom: -5px;
+	
+}
+
+#footer pre{
+	position: relative;
+	bottom: -5px;
+
+}
+
+
+
+
+}
+
+
+
+
+/* Phones portrait*/
+@media screen
+and (max-device-width:320px)
+and (orientation: portrait){
+
+
+#header{
+	text-indent:20px;
+	font-size:2.2vw;
+}
+
+#header section h1{
+	color:aqua;
+	font-size: 4vw;
+}
+
+h1,h2,h3{
+	color:#FE4365;
+}
+
+
+#navigator{
+	
+	font-size: 2.5vw;
+	
+}
+
+#navigator ul li a{
+	padding:3px 0;
+	display: block;
+}
+
+#sidebar ol li{
+	padding:3px 0;
+	display:block;
+	font-weight: bold;
+}
+
+#sidebar{
+	font-size:2.5vw;
+	float:none;
+	
+}
+
+#main-content{
+	
+	
+	font-size: 3vw;
+		
+}
+
+#main-content table{
+border-collapse:separate; 
+border-spacing:3px;
+font-size: larger;
+font-weight: bolder;
+}
+
+#main-content table, th, td{
+border: 1px solid white;
+border-collapse: collapse;
+}
+
+#main-content fieldset,legend{
+width: 720px;
+border-style: outset;
+}
+
+
+#table-special_offer{
+font-size:4vw;
+}
+
+#return-policy{
+font-size: 4vw;
+}
+
+#footer{
+font-size: 3vw;
+text-indent: 100px;
+	
+}
+
+#footer p{
+position: relative;
+bottom: -5px;
+	
+}
+
+#footer pre{
+position: relative;
+bottom: -5px;
+
+}
+
+.sub_button{
+	
+	font-size: 2.3vw;
+	
+}
+
+
+
+
+}
+
+
+
+
+   

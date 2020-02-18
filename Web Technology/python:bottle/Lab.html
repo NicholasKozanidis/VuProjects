@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lab sessions 3: Slam Bam Space Jam</title>
+		<style>
+		#map {
+			height: 400px;
+			width: 100%;
+		}
+		</style>
+	</head>
+	<body>
+		<h1>Questions Lab 1</h1>
+		
+		<h2>Question 1</h2>
+		
+		<h3>Make sure you have read Paul Ford's article "On HTML5 and the Group That Rules the Web" (see Reader on Canvas). What is, according to this article, the key difference between the HTML5 Recommendation published by W3C and the one published by the WHATWG?</h3>
+		
+		<p>
+		W3C recommends technologies to standardise the web as far as possible, and make it accessible to all people regardless of location, culture, technology, disabilities or resources.
+		WHATWG is interested in developing web technologies further, to advance the speed, power and capabilities of the web.
+		</p>
+  
+		<h2>Question 2</h2>
+  
+		<h3>Explain the difference between "the Internet" and "the World-Wide Web". Provide links to the online resources you used (if any) to answer this question.</h3>
+		
+		<p>
+		The internet is a network of networks - a worldwide network of computer systems. It's the base for all global communication between computers.
+		The World wide web is a system for accessing and sharing information on the internet, using systems like HTTP. Examples of this include web browsers, email, and instant messaging.</p>
+		<a href="https://computer.howstuffworks.com/internet/basics/internet-versus-world-wide-web1.htm" title="Sources1">Source1</a>
+		<a href="https://www.webopedia.com/DidYouKnow/Internet/Web_vs_Internet.asp" title="Sources2">Source2</a>
+		</p>
+	
+		<h2>Question 3</h2>
+	
+		<h3>What are the three essential technologies that Tim Berners-Lee created to build the World-Wide Web on top of the already existing Internet infrastructure?</h3>
+		
+		<p>The essential technologies are IP (Internet Protocol), TCP (Transmission Control Protocol) and DNS (Domain Name Server).</p>
+		
+		<h2>Question 4</h2>
+		
+		<h3>Create a document with the text "Hello World!" in a word processor such as Microsoft Word or LibreOffice Writer. Save the file as a Web page or HTML document and inspect the HTML source using a plain text editor or a browser. Describe the key differences of the exported HTML against a regular HTML document created with a plain text editor.</h3>
+		
+		<p>The automatically generated HTML code includes a lot of data that would normally not be included in a user-created HTML. For example metadata about the program that was used to generate the HTML, the author, date of creation etc. It also includes a bit of CSS, to define margins.
+		</p>
+		
+		<h2>Question 5</h2>
+	
+		<h3>Find out which port (according to the current IANA assignment) is used for the following protocols:<br>
+			HTTP<br>
+			SSH<br>
+			FTP</h3>
+	
+		The source used for all ports is <a href="https://www.webopedia.com/quick_ref/portnumbers.asp">Webopedia</a>. All descrption sources are taken from the same site. It's an encyclopedia written by experienced editors, with sources from standards bodies, leading technology companies, universities, professional online technical publications, white papers and professionals working in the field.
+		</p>
+		<table id="protocolTable">
+			<tr>
+				<th>Protocol</th>
+				<th>Gate</th>
+				<th>Description</th>
+				<th>Source</th>
+			</tr>
+			<tr>
+				<td>HTTP</td>
+				<td>80</td>
+				<td><strong>H</strong>yper<strong>T</strong>ext <strong>T</strong>ransfer <strong>P</strong>rotocol is a protocol that defines how web servers and browsers should respond to various commands.</td>
+				<td><a href = "https://www.webopedia.com/TERM/H/HTTP.html">source</a></td>
+			</tr>
+			<tr>
+				<td>SSH</td>
+				<td>22</td>
+				<td><strong>S</strong>ecure <strong>Sh</strong>ell is a program to log into another computer over a network, to execute commands in a remote machine, and to move files between machines.</td>
+				<td><a href = "https://www.webopedia.com/TERM/S/SSH.html">source</a></td>
+			</tr>
+			<tr>
+				<td>FTP</td>
+				<td>20/21</td>
+				<td><strong>F</strong>ile <strong>T</strong>ransfer <strong>P</strong>rotocol is a protocol for sharing files over the internet, using TCP/IP protocol.</td>
+				<td><a href = "https://www.webopedia.com/TERM/F/ftp.html">source</a></td>
+			</tr>
+		</table></p>
+		
+		<h2>Question 6</h2>
+	
+		<h3>Explain why the HTML of the first paragraph should be preferred. Illustrate this with an example. Also, identify another pair of HTML constructs for which the same rationale holds.</h3>
+	
+		<p>The paragraphs contain b and strong. In a web browser they look similar (bolded text), but the difference is that bolding is a visual style, while strong is more universal, and works for instance with speech programs. Another similar pair is i and em</p>
+	
+		<h2>Question 7</h2>
+	
+		<h3>Identify one similarity and one difference between the HTML elements span and div.</h3>
+		
+		<p> The span and div tags provide no meaning at all. They are used quite often in conjuction with CSS especially to group HTML chunks together. The span tag is an in-line element and used for a small chunk of HTML inside a line(usually with the paragraph tag), whereas a div is a block-line and used to group larger chunks of code</p>
+	
+		<h2>Question 8</h2>
+	
+		<h3>List potential benefits of using CSS over HTML style markup. (Expected length: 7-8 lines)</h3>
+		
+		<p>Firstly, using CSS style sheets in a separate file from the HTML makes the HTML look much cleaner. The HTML code will contain only data about the website, and will not be cluttered with style sheets, especially since you would have to define separate styles for all parts. With CSS, you can define different styles for all different tags, which you can then call in HTML without cluttering up the code.</p>
+	
+		<h2>Question 9</h2>
+		
+		<h3>How would you expect a Web browser to render an emphasized word (i.e., included in an em element) in a paragraph with an italic font style? Check whether your browser behaves according to your expectation.</h3>
+		
+		<p>Since usually italicized text is emphasized by normalizing it, we would expect that to happen here as well. However making a new html file with an associated css that italicizes all text, the text remained italicized, with an em tag.</p>
+	
+		<h2>Question 10</h2>
+	
+		<h3>Pick two web browsers. What are in your view the key differences between the two browsers?</h3>
+
+		<p>We picked Google Chrome and Internet Explorer. The aging browser is no longer the default browser for Windows 10 and only exists today because some companies need it for legacy applications.It provides a familiar baseline and most users have it installed.However, IE is a relatively unsafe browser, it is slower and lacking features. Specifically, it's HTML5 compliance is low compared to Chrome's almost perfect compliance. In addition, Google chrome supports a wide set of Javascript features that IE could not render.</p>
+		
+		
+		<h1>Questions Lab 2</h1>
+		
+		<h2>Question 1</h2>
+		
+		<h3>Read the article by Axel Schmetzke, (2001),"Web accessibility at university libraries and library schools" (See Reader on Canvas). Schmetzke found that the most prevalent accessibility error is not having ALT texts for images. With which WCAG guideline does this correspond?</h3>
+		
+		<p>Having alt text on images corresponds to the WCAG guideline 1.1, "Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language."</p>
+		
+		<h2>Question 2</h2>
+		<h3>The Web Accessibility checker 'Bobby' that Schmetzke used has been taken offline, but its predecessor WAVE (Links to an external site.)Links to an external site. can be found online. Run the tool on a web site you think should be accessible. Briefly write down your key observations.</h3>
+		
+		<p>We are observing a site that <a href="http://www.livingmadeeasy.org.uk/communication/vision-3621">introduces products for visually impaired people</a>. It should be accessible because it is targeted specifically for people who need assistance and accessibility in their everyday life. Running the site through WAVE finds 0 errors, and 4 warnings. Optimally there should be 0 warnings as well, but by having 0 errors, the developers have clearly had accessibility in mind.</p>
+		
+		<h2>Question 3</h2>
+		
+		<h3>Acquaint yourself with principles of color contrast, e.g. through the Color Contrast Check (Links to an external site.)Links to an external site.. Test three color combinations and write a short report of the results and how these should be interpreted.</h3>
+		
+		<p>Color contrast is an accessibility issue. Colors that are not contrasting enough can cause problems for visually impaired people to tell the content apart from the background. Colors should have a significant enough difference in both brightness and color to be accessible. Comparing a white background and a white text gives clearly the best results, as black and white are significantly different in both brightness and in hue. Dark blue and bright green result in a significant enough brightness contrast so that it would look good on a black and white screen, but fall short on the color contrast, so that it might cause issues for a visually impaired person. Bright green and bright pink together result in a significant color difference, but a very low brightness difference. So someone who has trouble telling colors apart should be able to read it, but it would not look good on a black and white monitor.</p>
+		
+		<h2>Question 4</h2>
+		
+		<h3>Make sure you understand the difference between a Native app versus a (responsive) Web app. Discuss at least one advantage of native apps over web apps and vice versa.</h3>
+		
+		<p>Native apps are apps that are designed and installed on a specific device and/or operating system. Web apps are apps that work over the web without being installed on a device, and is usually accessed through a web browser. Native apps can access more of the device's power it is working on, and can perform faster and better. Web apps on the other hand are compatible with far more devices as they can be accessed over the web regardless of the architecture.</p>
+		
+		<h2>Question 5</h2>
+		
+		<h3>Summarize the key multilingual issues that W3C is addressing within the "Internationalization" activity.</h3>
+		
+		<p>The multilingual issues in internationalization are all about how you write and read differently in different languages. The first issue is different characters. For instance greek, russian, many asian languages etc. use different alphabet than the latin alphabet, so there needs to be support for multiple character sets.
+		The second issue is that in some languages you read and write in a different direction than in english, like right to left, or vertically. International apps and websites need to be built in such a way that if you mix languages written in different ways, they do not interfere with each other.
+		There is also the issue that some languages have significantly different sentence structure, text needs to be made such that if it is translated, the length and structure of the text does not change dramatically.
+		Lastly, culture-specific symbols can cause an issue. Symbols in one culture can mean something completely different in another culture, so when translating text, one must also take care to translate symbols.</p>
+		
+		<h2>Question 6</h2>
+		
+		<h3>What is the IP address of the server running the website at http://www.few.vu.nl? And the IP address behind the site running http://www.cs.vu.nl? Explain how you found the answer. How could the results you find influence the web servers' functionality?</h3>
+		
+		<p>The IP address of the first site is 130.37.164.154. The IP address of the second site is the same, 130.37.164.154. I found the answer by running the site through an <a href="https://www.site24x7.com/find-ip-address-of-web-site.html">online checker.</a></p>
+		
+		<h2>Question 7</h2>
+		
+		<h3>Look up information about the new protocol for IP addresses (IPv6, IP version 6). Describe the main features of this protocol and indicate what the reasons are to move from version 4 to version 6. (Expected length: 1/4 page)</h3>
+		
+		<p>IPv6 uses 128 bits instead of 32 bits for it’s adresses, effectively creating an impossibly large number of available adresses. The original IPv4 had a limited number of adresses that couldn’t keep serving the increasing number of devices with access to the internet. The switch from IPv4 to IPv6 is largely invisible to most computer users.</p>
+		
+		<h2>Question 8</h2>
+		
+		<h3>What are MIME types? Name the most common subtypes of type text. Provide a link to the most authoritative source with the complete list.</h3>
+		
+		<p>MIME stands for Multipurpose Internet Mail Extensions and is a standardized way to indicate the nature and format of a document.The Internet Assigned Numbers Authority(IANA) is the official body responsible to keeping track of all official MIME types. The complete list: https://www.iana.org/assignments/media-types/media-types.xhtml</p>
+		
+		<h2>Question 9</h2>
+		
+		<h3>Make sure you have read the blog post What Is A Web Server? (Links to an external site.)Links to an external site. as described in the Reader on Canvas. Knupp states that the GET method is the most common HTTP request method. Name at least one other HTTP request method and find out what the differences are between GET and the one you picked. Which authoritative source(s) have you used?</h3>
+		
+		<p>Differences between GET and POST:
+
+		1) Reload button: Harmless for GET but for POST, data will be re-submitted
+		2) Bookmark: Possible for GET, not for POST
+		3) Cached: Possible for GET, not for POST
+		4) Encoding type: for GET its application/x-www-form-urlencoded, for POST its application/x-www-form-urlencoded or multipart/form-data. Use multipart encoding for binary data
+		5) History: GET parameters remain in browser history, whereas not saved for POST
+		6) Restrictions on data length: Because the GET method adds data to the URL, that limits the data length as the URL max length is 2048 characters. No restrictions for POST
+		7) Restrictions on data type: Only ASCII characters allowed for GET, No restrictions for POST
+		8) Security: GET is less secure than POST, because the data sent is part of the URL, shouldn’t be used for passwords or other sensitive information. POST data are not stored in browser history or web server logs
+		9) Visibility: Data is visible via URL for GET, not visible for POST
+
+		<a href="https://www.w3schools.com/tags/ref_httpmethods.asp">Source</a></p>
+		
+		<h2>Question 10</h2>
+		
+		<h3>Most of the well-known HTTP web servers serve HTML and other content to end users. But behind the scenes, there are many HTTP servers that provide services for other web sites. To manage who is allowed to do what on these services, they often deploy keys: short sequences of characters that are used to uniquely identify you. We will use an example of such a web site in the assignments, for which your need a key. So please go the page at https://wt.ops.labs.vu.nl/keys and generate a key. Please record the value of the key generated as the answer to this question, so you can use it later in the assignments.</h3>
+	
+		<p>adf12fb0</p>
+	
+		<h1>Questions Lab 3</h1>
+		
+		<h2>Question 1</h2>
+		
+		<h3>Enable the JavaScript console in your favorite browser, so you know you can see all the generated messages. Explain shortly what browser you used and how you have enabled the console.</h3>
+		
+		<p>
+		The browser used here was Google Chrome. The console is opened by either right clicking the site and selecting inspect,
+		and selecting "Console" from the window that opened, or through the key combination of ctrl+shift+j
+		</p>
+  
+		<h2>Question 2</h2>
+  
+		<h3>Show how you can use JavaScript and the DOM API to change the background of the body element to the color red. Also show how you can override the behavior of clicking on an <a> element, using only JavaScript and the DOM API, without other libraries.</h3>
+		
+		<p>See example question 2 in the folder. You can add callers for functions on actions performed on HTML elements to change the background, or an event listener to detect when a link is pressed, and then interrupt the normal action through a JavaScript function.</p>
+	
+		<h2>Question 3</h2>
+	
+		<h3>Compare the use of JQuery to change the behavior of the a element as shown in the example with the code you used in the previous question. List pros and cons of both methods.</h3>
+		
+		<p>With JQuery, adding an event listener to an a tag is simpler, but in essence works the same. It can't really be said that JQuery has any cons compared to pure JS, since JQuery is a library of JS which only adds syntax and functionalities,
+		but does not prevent normal JS commands from running. So, with JQuery you can use JavaScript and JQuery both, but with pure JS you can only use JavaScript.</p>
+		
+		<h2>Question 4</h2>
+		
+		<h3>Describe the major similarities and differences between Python and JavaScript. (if you are more familiar with Java, you may also compare Java to JavaScript)</h3>
+		
+		<p><pre>Differences:
+
+		1	Classical inheritance in Python, Prototypal inheritance in JScript
+		2	JScript is a braces and semicolons language while Python is white-space and indent/block based
+		3	No var keyword in Python, implicit globals in Jscript, both are lexically scoped
+		4	In Python, you can't access private variables like you could in JScript
+		5	There's no undefined error in Python, exceptions are thrown
+		6	Immutable list arrays in Python
+		7	No switch statement in Python but instead you're encouraged to use a dictionary in that manner, sometimes its convenient assigning properties to lambdas and executing them
+		8	Raise & Except used in Python, Throw & Catch in Jscript
+		9	Native Unicode strings in JScript
+		10	Keyword operators such as and, is, and not are used in Python
+		11	Python doesn't support counters such as i++
+		12	Python's for loop is "smart" so you don't need to use a counter for enumerating through lists, nor do you run into prototypal properties inherited from Object.prototype
+		13	Whitespace is part of Python’s design philosophy, not for javascript
+		14	Pythons comes with built in libraries that can be used via the “import” statement
+
+Similarities:
+
+		1 Strings in python work quite similarly to those in Javascript, albeit with added benefits.
+		2 Python’s expression syntax is similar to that of Javascript
+		3 Variables are lexically scoped in both Python and Javascript
+		4 Dictionaries in Python are Similar to Objects in Javascript
+
+		<a href="http://hg.toolness.com/python-for-js-programmers/raw-file/tip/PythonForJsProgrammers.html">source</a></pre></p>
+		
+		<h2>Question 5</h2>
+	
+		<h3>What does the acronym "AJAX" stand for? Explain the role of the term the first "A" refers to.</h3>
+	
+		<p>Asynchronous Javascript and xml. Asynchronous means that, using javascript and XML, only parts of the website can be updated
+		while the user is browsing the site, instead of having to update the whole page, as with HTML requests.</p>
+				
+		<h2>Question 6</h2>
+	
+		<h3>What is the role of the host objects in JavaScript? Name two often used host objects. Why are there no equivalents in Java or Python?</h3>
+	
+		<p>host objects are provided by the enviroment in order to serve a specific purpose to that environment not defined in by the specification.Objects like: window, document, XmlHttpRequest, DOM nodes etc are provided by the browser environment. They are distinct from the built-in objects because not all enviroments will have the same host objects.
+
+		There are no similar objects in Python because javascripts fundamental concept is that every element that can hold properties and methods is an objects, except for primitive data types(not sure, recheck).</p>
+		
+		<h2>Question 7</h2>
+	
+		<h3>Name two objects that are built into the JavaScript language. Briefly explain their role.</h3>
+		
+		<p>The Date Object, used to represent arbitrary dates and times, to get the current system date and to calculate differences between dates.
+
+		The JSON Object, which provides functions to convert to and from JSON text format. Used efficiently in web development</p>
+		
+		<h2>Question 8</h2>
+	
+		<h3>Briefly explain the role of events and event listeners in JavaScript.</h3>
+		
+		<p>Events are things that happen in a HTML site. Events include things such as the page finished loading, page is closed, or the page is interacted with in some way (mouse over, clicking on an element).
+		For Javascript, many functions or commands are ran when the site is interacted with, or when the page has finished loading or is closed.
+		Even listeners are commands to "listen" for a certain event, to see when it happens. After the event listener detects the event, the listener calls for a function.
+		For Javascript, events are important, since many non-static parts of a website are reactions to an event.
+		</p>
+		
+		<h2>Question 9</h2>
+		
+		<h3>Explain in 3 lines the functionality of the autocomplete component that Marks describes.</h3>
+		
+		<p>The autocomplete component is a textbox that appears on the map, where you can type a place name, and the maps application searches google's library of places for a match.
+		The maps API that is linked to the HTML file is extended to include the autocomplete library. Then in the javascript file, an event listener, exclusive for google maps,
+		is added, that listens to the autocomplete being filled and a new place selected. When this happens, the maps application jumps to the location of the selected place and opens an info window.
+		</p>
+		
+		<h2>Question 10</h2>
+	
+		<h3>Map to bermuda</h3>
+
+		<div id="map"></div>
+			<script>
+			function initMap() {
+				var bermuda = {lat: 32.295, lng: -64.797};
+				var map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 4,
+					center: bermuda
+				});
+				var marker = new google.maps.Marker({
+					position: bermuda,
+					map: map
+				});
+			}
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCULGArKIiYy_g_GGCOfWNoOF3dfcrCC08&callback=initMap">
+    </script>
+		
+		<h1>Questions Lab 4</h1>
+		
+		<h2>Question 1</h2>
+		
+		<h3>a. Have a closer look at the term frequency matrix. Given this table, how well do you think the tokenizer did its job? Do you see any room for improvement?</h3>
+		
+		<p>Mostly the tokenizer worked as intended, and the words are correctly identified across all chapters. Only problem is with
+		some words and letters that are counted as separate words, even though they clearly are not words (like the numbers 0 and 3, or _i_).
+		Other than that problem, it looks to work well.</p>
+		
+		<h3>b. Looking at the top 30, does it make sense to include all of them in the stop words list? Explain your answer.</h3>
+
+		<p>Almost all, yes. Two words, t and s, which clearly are not words, don't belong in this list in our opinion.</p>
+		
+		<h3>c. Looking at the top 30, do you think the frequency follows Zipf’s law?</h3>
+		
+		<p>Looking at only the top 30 words, no. Zipf's law expects the number of words to roughly halve with the next word, which clearly does not happen
+		in the case of this text, except for the first two words. So as stated above, following zipf's law should mean that each word</p>
+		
+		<h3>d. Similarly, run h - heaps(alice_index$total) to determine whether Heaps law applies. Explain in your own words what "Heaps’ law applies" means in this case.</h3>
+		
+		<p>Heaps' law definitely applies. The longer the text goes on, the more different words show up, with diminishing returns as the word count increases
+		,that looks exactly like a typical Heaps' law curve.</p>
+		
+		<h2>Question 2</h2>
+		<h3>a. How do you assess the quality of the TF-based search. What can you say about precision and recall?</h3>
+		
+		<p>The only way to assess the quality of any search, including TF-based, is human assessment, or asking the user's feedback on results. Precision means how many of the received results were correct results, and recall means
+		how many of the totally available correct results were found. For purely TF based search, the recall should be high, but presicion may be low as the term searched might be a common one, and might be found all over.</p>
+		
+		<h3>b.Computing the TFIDF matrix takes quite some time. Why is that, do you think?</h3>
+		
+		<p>That is because the entire text's worth of data needs to be processed multiple times. Calculating only the TF matrix needs just one run through as the words are counted, but for TFIDF, the IDF needs to be calculated for each
+		word after the word count, and after that the total value needs to be applied to each word in each chapter based on the previous calculation and the total amount of words.</p>
+		
+		<h3>c. Compare the TF-based search with the TFIDF-based search. What has changed? How do you compare the quality of the searches. What can you say about precision and recall?</h3>
+		
+		<p>Both searches give you different results. TF gives you a raw word count of a spesific word, while TFIDF gives you a score that tells you how informative the word is in any given chapter. With a TF based search, searching for instance a spesific phrase, you would get high recall
+		as you would find all the parts containing any of the words, including the correct phrases, but the presicion would be, depending on the words in question, high to very low. For a similar query using TFIDF, the presicion would be high, as any non-important instances of the words would be
+		discarded immediately, but recall might also be lower, if some instances of the words are deemed unimportant.</p>
+		
+		<h3>d. Alice in Wonderland only has 11 chapters, what can you say about the precision at k where k=5 for both types of searches. That is, what if you would only look at the 5 highest ranked results, and discard the other results as irrelevant.</h3>
+		
+		<p>For TF, the precision and recall would both likely drop, since the search would only return the highest densities of certain words, but not necessarily together. TFIDF would have likely high precision, but not necessarily a high recall, since the top 5 results would likely be
+		correct since they are selected based on the most relevant information, but it might drop out a lot of correct results beyond the top 5.</p>
+		
+		<h3>e. What would happen to precision and recall if you implemented the improvements to the tokenizer you suggested in question 1a.?</h3>
+		
+		<p>They would increase, since non-informative "junk" words would not be included in the search.</p>
+		
+		
+		<h1> Lab 5 Questions: HTTP &amp; REST</h1>
+		
+		<h2>Question 1</h2>
+		
+		<h3>Make sure you have read the blog post What Is A Web Server? as described in the Week 2: Reader on Blackboard. Knupp states that the GET method is the most common HTTP method. He does not discuss that the HTTP GET method is assumed to be idempotent. Explain:
+<ol>
+	<li>what idempotent means in this context</li>
+	<li>how idempotent requests simplify the implementation of a caching HTTP proxy,</li>
+	<li>how so-called "visitor counters" often break this assumption, and</li>
+	<li>how such counters might be negatively affected by proxies.</li>
+</ol>
+		</h3>
+		
+		<p>An idempotent HTTP method can be called many times having the same outcome. No matter how many times the method is called, the result should be the same. Because these methods always have the same outcome and don't change the resource on the server side, they are easier to be cached and prefetched without any repercussions or side-effects to the resource.
+Visitor counters alter server data indicating how many times a user has visited a page. Meaning that the outcome of an idempotent "GET" request, will not always be the same. However, some argue that from a client's point of view, a GET request is still safe and it is up to the server to decide wether to view counters as side-effects or of simple semantic meaning.These counters or "cookies" can be affected by proxy users. In such a case, a user connects to a proxy server that filters requests but also changes the user's ip address, effectively causing faulted results to a counter.
+sources: <a href="http://restcookbook.com/HTTP%20Methods/idempotency/">Source1</a>
+<a href="https://stackoverflow.com/questions/2363294/understanding-rest-is-get-fundamentally-incompatible-with-any-number-of-views">Source2</a>
+		</p>
+		
+		
+		<h2>Question 2</h2>
+		<h3>HTTP is a so-called stateless protocol. Explain what this means. Name at least one advantage and disadvantage of the fact that HTTP is stateless.</h3>
+				
+		<p>HTTP is stateless, meaning there is no link between two requests being successively carried out on the same connection. A drawback from this is that a user's state sometimes needs to be stored, as in for example e-shop's and the add to basket functionality. While the core of HTTP itself is stateless, HTTP cookies allow the use of stateful sessions, allowing session creation on each HTTP request to share the same context, or the same state. A main advantage of the statelessness of HTTP requests is that: it makes server design much simpler, because there is no need to dynamically allocate storage to deal with server-client conversations in progress.
+sources: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview">Source1</a>
+<a href="https://www.quora.com/What-are-the-advantages-of-stateless-protocol">Source2</a>
+		</p>
+		
+		
+		<h2>Question 3</h2>
+		<h3>One of the first applications of HTTP cookies was to add "shopping basket" functionality to the web sites of online shops. Explain why such sites are hard to build without cookies, and how cookies are used to implement electronic "shopping baskets". </h3>
+				
+		<p>The need for cookies in the shopping basket case, is a direct result of HTTP being stateless and therefore no user information is saved. Cookies support a wide spectrum of hosts and session configurations while allowing the server to "remember" the user and any choices they made while adding items to their basket, even after they shut down the website or restart their computer.
+		</p>
+		
+		<h2>Question 4</h2>
+		<h3>Many web sites serving HTML pages for human readers, also offer RESTfull services that allow other application developers to develop web application using their services. To be able to use their services, developers need access to clear documentation that described how to use these REST APIs. Good examples of such rest documentation include: the Spotify Web API or the Twitter Twitter API. While the content of these two sites is really different, the structure of their documentation has many similarities. Study the documentation page of these two individual services:
+
+https://developer.spotify.com/web-api/get-album/ 
+https://developer.twitter.com/en/docs/trends/trends-for-location/api-reference/get-trends-place
+Both document the three key ingredients of a REST resource:
+
+The endpoint of the resource, including the full URL and the parameters that can be used
+The HTTP method that may be applied to the resource, e.g. GET, POST, HEAD, etc.
+The response format in which the resource will be served, e.g. in JSON, XML, CSV, etc.
+Make a simple (two row by three column) table and summarize briefly what, according to this documentation, the three key REST ingredients are for these two services. Both pages are not really informative about the HTTP response codes you should expect, especially in case of an error. Add a fourth column with the three most likely HTTP response codes, along with for each code, a typical situation in which it might occur. For example, what HTTP response code do you expect when the server is overloaded? or when you are refused access to the data you requested?</h3>
+				
+		<table>
+					<caption>REST ingredients: Spotify &amp; Twitter</caption>
+					<tr>
+						<td>Endpoint: GET https://api.spotify.com/v1/albums/{id}</td>
+						<td>Request Parameters:The Authorization header is required, it grant's an access token from the Spotify Account service. The id of the album path parameter. The market query parameter which is optional </td>
+						<td>Response Format: JSON object on success</td>
+						<td>Response Codes: 200: OK-the request success, 429: Too many requests, 403: Forbidden- the server understood the request but refuses to fulfil it</td>
+  					</tr>
+  					<tr>
+  						<td>Resource URL: https://api.twitter.com/1.1/trends/place.json</td>
+  						<td>Resource Information: Json format, requires authentication</td>
+  						<td>Parameters: id-required, exclude-optional</td>
+  						<td>Response Codes: 200: OK-request success, 403: Forbidden-access denied even though request was understood, 429: Too many requests</td>
+  					</tr>
+  					
+		</table>
+		
+		
+		<h2>Question 5</h2>
+		<h3>While you can easily try out HTTP GET requests in the URL bar of your browser, for other methods, you need another web client to test an RESTful service. If you are comfortable with using the command line interface (of your Linux or mac terminal, or the PowerShell on Windows), you might want to use the curl command line tool that is also used in the examples on the Spotify. Many students will prefer a graphical REST client. We strongly advise you to install one and learn how to use it. For example, Postman is available on Windows, Mac and Linux, also as a browser plugin.
+
+Use the REST client of your choice to make an HTTP OPTIONS request to the resource used in assignment 1 and 2: http://wt.ops.few.vu.nl/api18/????????. Study the HTTP response headers in the server's response you receive back. According to these response headers, which other HTTP requests methods are also allowed on this resource? And from which origin are you allowed to make these requests?</h3>
+				
+		<p>By using the command curl - https://wt.ops.labs.vu.nl/api18/adf12fb0 on the terminal, we can see that the already allowed headers are: Content-type and Content-length, which are application/json and 439 respectively. Additionally the headers: Origin, Accept, X-Requested-With and X-CSRF-Token are allowed. The origin is "*" which means from any source.
+		</p>
+		
+		
+		<h2>Question 6</h2>
+		<h3>Use your REST client to make a normal GET request to the same resource (URL) you used above. What is the actual Content-Type of the response? Is it what you expected it to be? Explain your answer.</h3>
+				
+		<p>The content type is in JSON because we set it so through headers</p>
+		
+		
+		
+		<h2>Question 7</h2>
+		<h3>Web frameworks come in a wide range of flavors. Dimensions on which you can assess them include installation size and complexity. Bottle (Links to an external site.)Links to an external site. is a so called micro web-framework for Python, that can be installed on top of an existing Python installation by downloading a single file. Make sure you have done the Bottle example code and Bottle tutorial as described in the Reader on Canvas and have the first "Hello World" example working on your own computer. Tips:
+Start by downloading the file "bottle.py" into the folder you want to use for Assignment 3.
+Copy the code in the "Hello World" example into a new file "hello.py" in the same folder
+Use the cd command in a command line shell (e.g. PowerShell on Windows, Terminal on MacOS, xterm on Linux) to navigate to the same folder
+Check you can start your "Hello World" HTTP server from the command line using python hello.py
+if you run the tutorial on one of the VU machines, port 8080 may already be in use. Feel free to change the port to 8081 or another value to work around this.
+Further down the tutorial, under Auto Reloading, the tutorial shows how you can make python automatically reload your code after you made any changes to "hello.py". Add this to your code, restart manually one more time and check if your code is indeed reloaded automatically on further edits.
+How can you see that your code is indeed reloaded after you made a change in "hello.py"? What happens if you accidentally introduce a syntax error?</h3>
+				
+		<p>By modifying the text of "Hello World!", and then reloading the localhost:8080 page, we can immediately see the differences without having to restart the server. However, when a syntax error was made, the server shut down and the terminal printed the error line and cause.</p>
+		
+		
+		<h2>Question 8</h2>
+		<h3>In the Bottle tutorial, templates are used to dynamically generate HTML code from database data, using Python at the server-side. Compare this to the approach you used in Assignment 2. There you also created HTML dynamically, but on the client-side, using JavaScript. Note that the server on wt.ops.few.vu.nl serves its data only in JSON format, not in the form of an HTML table generated by a template. List at least one key advantage of each approach, that is, an HTTP server serving database data dynamically in an HTML table versus one that serves the same data in JSON format.</h3>
+				
+		<p>It is considered good practice to use JSON representation when the javascript code is <strong>data</strong>, whereas if it's a matter of <strong>presentation</strong> and there is no calculation involved, it is better to resort to HTML. More specifically: The advantage of the client side approach, is that JS code and templates are static resources that can be cached, proxied and distributed via CDN. Which cannot be done if you have server-side generated dynamic HTML. Also, returning just data from RESTful API in lightweight format uses much less server-side resources, making response faster. Advantages of JSON representation is both for flexibility and security reasons.</p>
+
+
+<h2>Question Bonus</h2>
+		<h3>Give three examples of both white hat and black hat SEO. Indicate for each example the relation with the technologies discussed in this course (where applicable).</h3>
+				
+		<p>Black hat SEO:
+	<ol>
+		<li>Blog Spam</li>
+		It is done by automatically posting random comments or promoting<br>
+		commercial services to blogs, wikis or other publicly accessible online boards. Such behavior can overload the server with HTTP requests and cause false traffic numbers on visitor counters.
+		<li>Parasite Hosting</li>
+		It is the process of hosting a website on someone else's server without<br>
+		their concern. That act can cause a lot of issues to the host server, considering all the adiotional traffic that the server might not be programmed to handle.
+		<li>Cloaking</li>
+		It is a technique in which the content presented to the search engine is different than that on the user's browser. This is done by delivering content based on the IP addresses or the user-agent HTTP header of the user requesting the page
+	</ol>
+		</p>
+		<p>
+	White hat SEO:
+	<ol>
+		<li>Site Optimization</li>
+		The creation of site content, wording and structure for the purpose of attaining high search engine positioning.
+		<li>Quality Content</li>
+	The richer the content of the website, the more valuable it seems to human visitors and search engine
+		<li>Internal Links</li>
+		Makes the website more accessible through search engines as they add navigation to deeper parts of the content.
+	</ol>
+</p>
+
+		<h1>Lab 6 Questions: Web science &amp; evaluation</h1>
+		
+		<h2>Question 1</h2>
+		<h3>Make sure you have read Web Science: A Provocative Invitation to Computer Science (see also Week 3: Reader on BlackBoard). What examples of negative aspects of Web-based social interaction does Shneiderman mention? Do you share his view that these topics should be seen as part of Web Science? Or are these topics better left to existing research fields as sociology or law? Motivate your answer.</h3>
+				
+		<p>The negative aspects of web-based social interaction mentioned in the article are: security breaches, identity theft, privacy violations and social disruptions of globalization. While it is a fact that these are a direct result of the Web and the way it is designed, in my opinion are not matters to be handled by Web Scientists. Cyber-crime and sub parts of sociology focused on online law and interactions are more well fitted to deal with them.</p>
+		
+		<h2>Question 2</h2>
+		<h3>Explain what the term the long tail refers to in the context of web commerce. Most brick-and-mortar shops of books, games and music are forced to focus and sell only a few best-selling products. Why can the long tail still be profitable for online shops?</h3>
+				
+		<p>The term "Long Tail" market refers to the section of online markets that is focused on niche consumer needs. Online shops that cater to the long tail consumer have several advantages over traditional retailers, infinite shelf space and the ability to change or add items to the inventory more easily. This allows them to offer an high selection of high-margin items at a fraction of the cost required of brick-and-mortar retailers.
+Link: <a href="https://www.ecommercetimes.com/story/57766.html">Source</a>
+		</p>
+		
+		<h2>Question 3</h2>
+		<h3>Watch this interview with Sir Tim Berners-Lee on net neutrality.
+Note that this interview was recorded more than 10 years (!) before a recent FCC ruling in December 2017 actually repealed the rules on net neutrality in the USA.
+<ol>
+	<li>Define net neutrality (use other sources if needed).</li>
+	<li>Do you agree with the statements in favor of net neutrality of Sir Tim in this video, or with the arguments against it from the FCC? Give arguments for your position.</li>
+	<li>How might this FCC ruling in the USA affect internet consumers in the EU?</li>
+</ol>
+</h3>
+				
+		<p><ol>
+	<li>Net neutrality is the principle that Internet service providers must treat all data on the Internet the same, and not discriminate or charge differently by user, content, website, platform, application, type of attached equipment, or method of communication. Under these principles, internet service providers are unable to intentionally block, slow down or charge money for specific websites and online content.</li>
+	<li>Net neutrality consists the very fountaition of the Internet and the very ideology that turned it into a powerful tool available to every person with access to it. Repealing net neutrality would create additional barriers for small companies as they will not be able to afford faster speeds, effectively cutting down the content and services available on the internet. Free speech would also suffer as internet providers would regulate web content and block anything they don't like. Internet user's would no longer be equal and that could lead to discrimination and the emerging of online social classes. Finally, net neutrality levels the playing field for online companies and startups, thus enabling free competition among creators of independent content and innovative serves, ultimately benefiting consumers.</li>
+	<li>The effects could most likely ripple over to Europe, as more political parties may feel like repealing net neutrality would benefit them. Furthermore, since the US population is a big chunk of internet user's, it would be that specific websites will have less/more visitors and therefore creators would have to adjust to that new demand</li>
+			</ol>
+		Link: <a href="https://en.wikipedia.org/wiki/Net_neutrality">Source</a>
+		</p>
+
+
+		<h2>Question 4</h2>
+		<h3>Explain the role of data.gov, in the discussion about a more transparent government. What could be a potential danger of sites like data.gov? (if you prefer, you can instead answer the same questions about the Dutch data.overheid.nl</h3>
+				
+		<p>Open data is a key ingredient to a more transparent government. It is difficult to conceal something if the facts are there for all to see. Open data empowers communities: the truth about crime rates, educational achievement, social services and so on is laid bare. Open data even drives economic growth: more small companies are springing up that extract useful information from data. Open data may even lead to more accurate conclusions and better decisions, as a wider variety of interested parties have the opportunity to examine the facts.
+In addition, with open data, people can explore the impact of policies on a wider range of indicators. However, open data raises some concerns, mainly in regards to privacy. Although government officials promise no leakage of personal information, this technology, as any other, is subject to misuse and abuse.
+
+Link:<a href="https://www.theguardian.com/society/2012/jul/10/open-data-force-for-good-risks"> Source</a>
+		</p>
+		
+		
+		<h2>Question 5</h2>
+		<h3>Jakob Nielsen regularly publishes columns on usability, discussing both good and bad Web design. In a 2011 column he collected his Top 10 Mistakes in Web Design. We are now in 2018, more than seven years later. Do you think Nielsen's top 10 is still relevant? From your own experience, do you know of any severe usability problems you encounter on current Web sites that are missing from this list? Which problems in his top 10 have become rare in 2018?</h3>
+				
+		<p>Nielsen's top 10 is still relevant to an extent. Issues such as PDF files popping while the user is looking for information or new browser windows opening or Advertisement-like design is still there, albeit to a lesser value than back in 2011. However, since that time the design and philosophy behind most websites has greatly improved and there are rarely any issues with miss informative content or bad search mechanics. Overall, the internet has become far more accessible.
+		</p>
+		
+		<h2>Question 6</h2>
+		<h3>Choose an existing website and imagine that you are designing an A/B test to evaluate changes to that website. Information on A/B tests can be found at Putting A/B Testing in Its Place. Discuss the two versions of the site you would want to test, which part of the site you would vary, and how you would measure performance of each version. What would be the dependent and independent variables in your A/B test? What would be your hypothesis?</h3>
+				
+		<p>The site in test would be <a href"https://www.artstation.com">Artstation</a>
+	a website featuring art from users all over the world. We would launch two versions of the website, one with a forum embedded in the current website and a completely separate website for forum discussions. The forum placement would be the independent variable and the dependent one would be user activity. Performance could be measured with a simple visitor counter to the different forum setups and the number of clicks/views/posts. There's absolute agreement that a forum is needed and could be quite useful; hypothetically one embedded into the website should attract more activity but there are people who prefer to separate the experience of browsing art and finding inspiration to discussions in regards to art techniques, jobs and trends.
+		</p>
+		
+		<h2>Question 7</h2>
+		<h3>Choose an existing web site and build a mini-survey that could appear as a popup on that web site. Explain (briefly) the purpose of your survey, and why you choose to use open questions, yes/no questions and/or questions on a scale (e.g the Likert scale). The html of the survey should work, but obviously it does not need to work on the web site you chose. Include a link to that web site instead.</h3>
+				
+		<p><form action="#" method="post">
+	<table>
+		<caption>Art relevance survey for <a href="https://www.artstation.com">Artstation</a></caption>
+		
+			<tr>
+				<td>Date:</td>
+				<td><input type="date" name="date"/></td>
+			</tr>
+			
+			<tr>
+				<td>Age:</td>
+				<td><input type="number" name="age" min="0" max="90"/></td>
+			</tr>
+						
+			<tr>
+				<td>Are you a digital or traditional artist?</td>
+				<td><input type="radio" name="art" value="Digital"/>Digital
+					<input type="radio" name="art" value="Traditional"/>Traditional
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Do you use the mouse, digital stylus or something else?</td>
+				<td><input type="radio" name="gear" value="Mouse"/>Mouse
+					<input type="radio" name="gear" value="Stylus"/>Stylus
+					<input type="radio" name="gear" value="Else"/>Something else
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Do you wish to see the content filtered based on your personal preferences?</td>
+				<td><input type="radio" name="pref" value="yes"/>Yes
+					<input type="radio" name="pref" value="no"/>No, show me everything
+					
+				</td>
+			</tr>
+				<tr>
+				<td>How often do you use the filter by artists search option?</td>
+				<td><input type="radio" name="pref2" value="yes"/>Quite often
+					<input type="radio" name="pref2" value="no"/>Not at all	
+					<input type="radio" name="pref2" value="maybe"/>Sometimes				
+				</td>
+			</tr>
+	</table>
+</form>
+	
+	<p> We chose a mixture of yes/no questions and more open-ended ones but still simple in meaning. The reason for that is because the average user wouldn't want to spend more than 2-3 minutes on a survey. By crafting appropriately meaningful but easy to answer questions, both the user and the survey maker are satisfied.
+	</p>
+		</p>
+		
+		
+		<h2>Question 8</h2>
+		<h3>Explain how the Common Log Format helps developing Web log analysis software. Briefly describe a scenario in which such software is used in an experiment aimed at improving a web site's link structure. Hint: after changes to the web site have been made, one could again collect log information and compare the logs collected before the change with those collected after the change, to see if the change was effective. What would be the dependent and independent variables in this experiment? What would be your hypothesis?</h3>
+				
+		<p>The Common Log Format,is a standardized text file format used by web servers when generating server log files. Because the format is standardized, the files can be readily analyzed by a variety of web analysis programs.
+Each line in a file stored in the Common Log Format has the following syntax:
+<em>host ident authuser date request status bytes</em>
+Because these logs in essence record what happened by whom on the system, they can be useful for accounting purposes as well as others.
+In the website link structure example, the independent variable is the link structure itself and the dependent one is the the amount of users/Ip's sent http requests to each link. Depending on the traffic the  before and after logs have recorded, we could make a fair assumption on how to redesign the structure based on user activity.</p>
+
+
+		<h2>Question 9</h2>
+		<h3>The website http://www.archive.org stores old versions of the Web. Use this archive to describe briefly the history of Google or some other site you're interested in.</h3>
+				
+		<p>The site we chose to inspect is imdb.com. Starting from the year 2000, we can clearly see that the site is a lot more "barebones" and unattractive. There are categories set up on sidebars to the left and right side of the browser, making it possible for users to access the content they prefer. In addition, there are search bars for the movie database and the US showtimes for specific films. Overall, the site looks less professional by today's standards and has a less serious tone as we can see advertisements and polls on the front page. Five years later, the design of the webpage hasn't changed much. However, some small changes were made to the font as it looks much crispier, the logo size has been increased, the sidebars have been enhanced in content and accessibility and additional images have been added for dvd releases and upcoming screenings. 2010 brought upon the website a considerable amount of changes and shaped towards more to what it is today. The website layout is improved in accessibility and design. Additional details have been added for each film like quotes and soundtrack. All the sidebars have been moved to the right side making it easier to read them naturally. Today the website is in my opinion one of the more well designed ones, highly accessible and the go-to standard for movie reviews and information. Over the years, even though additional trivial features were added, the essence of it hasn't changed and was always on par with the latest design trends of it's time.</p>
+		
+		
+		<h2>Question Bonus</h2>
+		<h3>In the summer of 2011, Web users in Iran became the victims of a man in the middle attack when trying to use Google's website. Explain what a man-in-the-middle-attack means in this particular scenario.
+
+The man-in-the-middle-attack became possible after a security breach in the servers of a small Dutch company called DigiNotar. Explain how it is possible that a small company in the Netherlands can break the security of Iranians using Google. Explain how the browser vendors reacted on this security breach, and how this reaction affected many Dutch government web sites.</h3>
+				
+		<p>In a man-in-the-middle attack, the attacker controls and alters the communication between two parties, without them knowing. In this particular event, the attackers used forged Google SSL certificates to spy on Iranian users of the domain. DigiNotar was a certificate authority dutch company, these certificates are responsible for verifying a digital entity's identity on the Internet and is an essential part of secure communication and public key infrastructure. However, DigiNotar's out of date software,it's poorly segmented network as well as overall faulty security system, lead to them being hacked and false certificates were issued. Those were then used to specifically target Iranian users. Fox-IT investigated the matter by reviewing the hacking tools used along with the custom scripts that were made for this very purpose as well as the log files of the activity. This lead to trust in all certificates issued by DigiNotar to be revoked by many browser and operating system developers. The Dutch government initially supported the company but quickly changed it's stance and ditched DigiNotar.</p>
+
+
+	</body>
+</html>

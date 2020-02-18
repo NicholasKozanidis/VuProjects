@@ -1,0 +1,1 @@
+java threadsocket.Telnet $1 $2

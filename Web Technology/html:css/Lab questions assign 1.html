@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lab session 1: Markup</title>
+	</head>
+	<body>
+		<h1>Questions Lab 1</h1>
+		
+		<h2>Question 1</h2>
+		
+		<h3>Make sure you have read Paul Ford's article "On HTML5 and the Group That Rules the Web" (see Reader on Canvas). What is, according to this article, the key difference between the HTML5 Recommendation published by W3C and the one published by the WHATWG?</h3>
+		
+		<p>
+		W3C recommends technologies to standardise the web as far as possible, and make it accessible to all people regardless of location, culture, technology, disabilities or resources.
+		WHATWG is interested in developing web technologies further, to advance the speed, power and capabilities of the web.
+		</p>
+  
+		<h2>Question 2</h2>
+  
+		<h3>Explain the difference between "the Internet" and "the World-Wide Web". Provide links to the online resources you used (if any) to answer this question.</h3>
+		
+		<p>
+		The internet is a network of networks - a worldwide network of computer systems. It's the base for all global communication between computers.
+		The World wide web is a system for accessing and sharing information on the internet, using systems like HTTP. Examples of this include web browsers, email, and instant messaging.</p>
+		<a href="https://computer.howstuffworks.com/internet/basics/internet-versus-world-wide-web1.htm" title="Sources1">Source1</a>
+		<a href="https://www.webopedia.com/DidYouKnow/Internet/Web_vs_Internet.asp" title="Sources2">Source2</a>
+		</p>
+	
+		<h2>Question 3</h2>
+	
+		<h3>What are the three essential technologies that Tim Berners-Lee created to build the World-Wide Web on top of the already existing Internet infrastructure?</h3>
+		
+		<p>The essential technologies are IP (Internet Protocol), TCP (Transmission Control Protocol) and DNS (Domain Name Server).</p>
+		
+		<h2>Question 4</h2>
+		
+		<h3>Create a document with the text "Hello World!" in a word processor such as Microsoft Word or LibreOffice Writer. Save the file as a Web page or HTML document and inspect the HTML source using a plain text editor or a browser. Describe the key differences of the exported HTML against a regular HTML document created with a plain text editor.</h3>
+		
+		<p>The automatically generated HTML code includes a lot of data that would normally not be included in a user-created HTML. For example metadata about the program that was used to generate the HTML, the author, date of creation etc. It also includes a bit of CSS, to define margins.
+		</p>
+		
+		<h2>Question 5</h2>
+	
+		<h3>Find out which port (according to the current IANA assignment) is used for the following protocols:<br>
+			HTTP<br>
+			SSH<br>
+			FTP</h3>
+	
+		The source used for all ports is <a href="https://www.webopedia.com/quick_ref/portnumbers.asp">Webopedia</a>. All descrption sources are taken from the same site. It's an encyclopedia written by experienced editors, with sources from standards bodies, leading technology companies, universities, professional online technical publications, white papers and professionals working in the field.
+		</p>
+		<table id="protocolTable">
+			<tr>
+				<th>Protocol</th>
+				<th>Gate</th>
+				<th>Description</th>
+				<th>Source</th>
+			</tr>
+			<tr>
+				<td>HTTP</td>
+				<td>80</td>
+				<td><strong>H</strong>yper<strong>T</strong>ext <strong>T</strong>ransfer <strong>P</strong>rotocol is a protocol that defines how web servers and browsers should respond to various commands.</td>
+				<td><a href = "https://www.webopedia.com/TERM/H/HTTP.html">source</a></td>
+			</tr>
+			<tr>
+				<td>SSH</td>
+				<td>22</td>
+				<td><strong>S</strong>ecure <strong>Sh</strong>ell is a program to log into another computer over a network, to execute commands in a remote machine, and to move files between machines.</td>
+				<td><a href = "https://www.webopedia.com/TERM/S/SSH.html">source</a></td>
+			</tr>
+			<tr>
+				<td>FTP</td>
+				<td>20/21</td>
+				<td><strong>F</strong>ile <strong>T</strong>ransfer <strong>P</strong>rotocol is a protocol for sharing files over the internet, using TCP/IP protocol.</td>
+				<td><a href = "https://www.webopedia.com/TERM/F/ftp.html">source</a></td>
+			</tr>
+		</table></p>
+		
+		<h2>Question 6</h2>
+	
+		<h3>Explain why the HTML of the first paragraph should be preferred. Illustrate this with an example. Also, identify another pair of HTML constructs for which the same rationale holds.</h3>
+	
+		<p>The paragraphs contain b and strong. In a web browser they look similar (bolded text), but the difference is that bolding is a visual style, while strong is more universal, and works for instance with speech programs. Another similar pair is i and em</p>
+	
+		<h2>Question 7</h2>
+	
+		<h3>Identify one similarity and one difference between the HTML elements span and div.</h3>
+		
+		<p> The span and div tags provide no meaning at all. They are used quite often in conjuction with CSS especially to group HTML chunks together. The span tag is an in-line element and used for a small chunk of HTML inside a line(usually with the paragraph tag), whereas a div is a block-line and used to group larger chunks of code</p>
+	
+		<h2>Question 8</h2>
+	
+		<h3>List potential benefits of using CSS over HTML style markup. (Expected length: 7-8 lines)</h3>
+		
+		<p>Firstly, using CSS style sheets in a separate file from the HTML makes the HTML look much cleaner. The HTML code will contain only data about the website, and will not be cluttered with style sheets, especially since you would have to define separate styles for all parts. With CSS, you can define different styles for all different tags, which you can then call in HTML without cluttering up the code.</p>
+	
+		<h2>Question 9</h2>
+		
+		<h3>How would you expect a Web browser to render an emphasized word (i.e., included in an em element) in a paragraph with an italic font style? Check whether your browser behaves according to your expectation.</h3>
+		
+		<p>Since usually italicized text is emphasized by normalizing it, we would expect that to happen here as well. However making a new html file with an associated css that italicizes all text, the text remained italicized, with an em tag.</p>
+	
+		<h2>Question 10</h2>
+	
+		<h3>Pick two web browsers. What are in your view the key differences between the two browsers?</h3>
+
+		<p>We picked Google Chrome and Internet Explorer. The aging browser is no longer the default browser for Windows 10 and only exists today because some companies need it for legacy applications.It provides a familiar baseline and most users have it installed.However, IE is a relatively unsafe browser, it is slower and lacking features. Specifically, it's HTML5 compliance is low compared to Chrome's almost perfect compliance. In addition, Google chrome supports a wide set of Javascript features that IE could not render.</p>
+		
+		
+		<h1>Questions Lab 1</h1>
+		
+		<h2>Question 1</h2>
+		
+		<h3>Read the article by Axel Schmetzke, (2001),"Web accessibility at university libraries and library schools" (See Reader on Canvas). Schmetzke found that the most prevalent accessibility error is not having ALT texts for images. With which WCAG guideline does this correspond?</h3>
+		
+		<p>Having alt text on images corresponds to the WCAG guideline 1.1, "Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language."</p>
+		
+		<h2>Question 2</h2>
+		<h3>The Web Accessibility checker 'Bobby' that Schmetzke used has been taken offline, but its predecessor WAVE (Links to an external site.)Links to an external site. can be found online. Run the tool on a web site you think should be accessible. Briefly write down your key observations.</h3>
+		
+		<p>We are observing a site that <a href="http://www.livingmadeeasy.org.uk/communication/vision-3621">introduces products for visually impaired people</a>. It should be accessible because it is targeted specifically for people who need assistance and accessibility in their everyday life. Running the site through WAVE finds 0 errors, and 4 warnings. Optimally there should be 0 warnings as well, but by having 0 errors, the developers have clearly had accessibility in mind.</p>
+		
+		<h2>Question 3</h2>
+		
+		<h3>Acquaint yourself with principles of color contrast, e.g. through the Color Contrast Check (Links to an external site.)Links to an external site.. Test three color combinations and write a short report of the results and how these should be interpreted.</h3>
+		
+		<p>Color contrast is an accessibility issue. Colors that are not contrasting enough can cause problems for visually impaired people to tell the content apart from the background. Colors should have a significant enough difference in both brightness and color to be accessible. Comparing a white background and a white text gives clearly the best results, as black and white are significantly different in both brightness and in hue. Dark blue and bright green result in a significant enough brightness contrast so that it would look good on a black and white screen, but fall short on the color contrast, so that it might cause issues for a visually impaired person. Bright green and bright pink together result in a significant color difference, but a very low brightness difference. So someone who has trouble telling colors apart should be able to read it, but it would not look good on a black and white monitor.</p>
+		
+		<h2>Question 4</h2>
+		
+		<h3>Make sure you understand the difference between a Native app versus a (responsive) Web app. Discuss at least one advantage of native apps over web apps and vice versa.</h3>
+		
+		<p>Native apps are apps that are designed and installed on a specific device and/or operating system. Web apps are apps that work over the web without being installed on a device, and is usually accessed through a web browser. Native apps can access more of the device's power it is working on, and can perform faster and better. Web apps on the other hand are compatible with far more devices as they can be accessed over the web regardless of the architecture.</p>
+		
+		<h2>Question 5</h2>
+		
+		<h3>Summarize the key multilingual issues that W3C is addressing within the "Internationalization" activity.</h3>
+		
+		<p>The multilingual issues in internationalization are all about how you write and read differently in different languages. The first issue is different characters. For instance greek, russian, many asian languages etc. use different alphabet than the latin alphabet, so there needs to be support for multiple character sets.
+		The second issue is that in some languages you read and write in a different direction than in english, like right to left, or vertically. International apps and websites need to be built in such a way that if you mix languages written in different ways, they do not interfere with each other.
+		There is also the issue that some languages have significantly different sentence structure, text needs to be made such that if it is translated, the length and structure of the text does not change dramatically.
+		Lastly, culture-specific symbols can cause an issue. Symbols in one culture can mean something completely different in another culture, so when translating text, one must also take care to translate symbols.</p>
+		
+		<h2>Question 6</h2>
+		
+		<h3>What is the IP address of the server running the website at http://www.few.vu.nl? And the IP address behind the site running http://www.cs.vu.nl? Explain how you found the answer. How could the results you find influence the web servers' functionality?</h3>
+		
+		<p>The IP address of the first site is 130.37.164.154. The IP address of the second site is the same, 130.37.164.154. I found the answer by running the site through an <a href="https://www.site24x7.com/find-ip-address-of-web-site.html">online checker.</a></p>
+		
+		<h2>Question 7</h2>
+		
+		<h3>Look up information about the new protocol for IP addresses (IPv6, IP version 6). Describe the main features of this protocol and indicate what the reasons are to move from version 4 to version 6. (Expected length: 1/4 page)</h3>
+		
+		<p>IPv6 uses 128 bits instead of 32 bits for it’s adresses, effectively creating an impossibly large number of available adresses. The original IPv4 had a limited number of adresses that couldn’t keep serving the increasing number of devices with access to the internet. The switch from IPv4 to IPv6 is largely invisible to most computer users.</p>
+		
+		<h2>Question 8</h2>
+		
+		<h3>What are MIME types? Name the most common subtypes of type text. Provide a link to the most authoritative source with the complete list.</h3>
+		
+		<p>MIME stands for Multipurpose Internet Mail Extensions and is a standardized way to indicate the nature and format of a document.The Internet Assigned Numbers Authority(IANA) is the official body responsible to keeping track of all official MIME types. The complete list: https://www.iana.org/assignments/media-types/media-types.xhtml</p>
+		
+		<h2>Question 9</h2>
+		
+		<h3>Make sure you have read the blog post What Is A Web Server? (Links to an external site.)Links to an external site. as described in the Reader on Canvas. Knupp states that the GET method is the most common HTTP request method. Name at least one other HTTP request method and find out what the differences are between GET and the one you picked. Which authoritative source(s) have you used?</h3>
+		
+		<p>Differences between GET and POST:
+
+		1) Reload button: Harmless for GET but for POST, data will be re-submitted
+		2) Bookmark: Possible for GET, not for POST
+		3) Cached: Possible for GET, not for POST
+		4) Encoding type: for GET its application/x-www-form-urlencoded, for POST its application/x-www-form-urlencoded or multipart/form-data. Use multipart encoding for binary data
+		5) History: GET parameters remain in browser history, whereas not saved for POST
+		6) Restrictions on data length: Because the GET method adds data to the URL, that limits the data length as the URL max length is 2048 characters. No restrictions for POST
+		7) Restrictions on data type: Only ASCII characters allowed for GET, No restrictions for POST
+		8) Security: GET is less secure than POST, because the data sent is part of the URL, shouldn’t be used for passwords or other sensitive information. POST data are not stored in browser history or web server logs
+		9) Visibility: Data is visible via URL for GET, not visible for POST
+
+		<a href="https://www.w3schools.com/tags/ref_httpmethods.asp">Source</a></p>
+		
+		<h2>Question 10</h2>
+		
+		<h3>Most of the well-known HTTP web servers serve HTML and other content to end users. But behind the scenes, there are many HTTP servers that provide services for other web sites. To manage who is allowed to do what on these services, they often deploy keys: short sequences of characters that are used to uniquely identify you. We will use an example of such a web site in the assignments, for which your need a key. So please go the page at https://wt.ops.labs.vu.nl/keys and generate a key. Please record the value of the key generated as the answer to this question, so you can use it later in the assignments.</h3>
+	
+		<p>adf12fb0</p>
+	
+	</body>
+</html>

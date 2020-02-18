@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lab sessions 2: Jam Sessions</title>
+		<style>
+		#map {
+			height: 400px;
+			width: 100%;
+		}
+		</style>
+	</head>
+	<body>
+		<h1>Questions Lab 1</h1>
+		
+		<h2>Question 1</h2>
+		
+		<h3>Make sure you have read Paul Ford's article "On HTML5 and the Group That Rules the Web" (see Reader on Canvas). What is, according to this article, the key difference between the HTML5 Recommendation published by W3C and the one published by the WHATWG?</h3>
+		
+		<p>
+		W3C recommends technologies to standardise the web as far as possible, and make it accessible to all people regardless of location, culture, technology, disabilities or resources.
+		WHATWG is interested in developing web technologies further, to advance the speed, power and capabilities of the web.
+		</p>
+  
+		<h2>Question 2</h2>
+  
+		<h3>Explain the difference between "the Internet" and "the World-Wide Web". Provide links to the online resources you used (if any) to answer this question.</h3>
+		
+		<p>
+		The internet is a network of networks - a worldwide network of computer systems. It's the base for all global communication between computers.
+		The World wide web is a system for accessing and sharing information on the internet, using systems like HTTP. Examples of this include web browsers, email, and instant messaging.</p>
+		<a href="https://computer.howstuffworks.com/internet/basics/internet-versus-world-wide-web1.htm" title="Sources1">Source1</a>
+		<a href="https://www.webopedia.com/DidYouKnow/Internet/Web_vs_Internet.asp" title="Sources2">Source2</a>
+		</p>
+	
+		<h2>Question 3</h2>
+	
+		<h3>What are the three essential technologies that Tim Berners-Lee created to build the World-Wide Web on top of the already existing Internet infrastructure?</h3>
+		
+		<p>The essential technologies are IP (Internet Protocol), TCP (Transmission Control Protocol) and DNS (Domain Name Server).</p>
+		
+		<h2>Question 4</h2>
+		
+		<h3>Create a document with the text "Hello World!" in a word processor such as Microsoft Word or LibreOffice Writer. Save the file as a Web page or HTML document and inspect the HTML source using a plain text editor or a browser. Describe the key differences of the exported HTML against a regular HTML document created with a plain text editor.</h3>
+		
+		<p>The automatically generated HTML code includes a lot of data that would normally not be included in a user-created HTML. For example metadata about the program that was used to generate the HTML, the author, date of creation etc. It also includes a bit of CSS, to define margins.
+		</p>
+		
+		<h2>Question 5</h2>
+	
+		<h3>Find out which port (according to the current IANA assignment) is used for the following protocols:<br>
+			HTTP<br>
+			SSH<br>
+			FTP</h3>
+	
+		The source used for all ports is <a href="https://www.webopedia.com/quick_ref/portnumbers.asp">Webopedia</a>. All descrption sources are taken from the same site. It's an encyclopedia written by experienced editors, with sources from standards bodies, leading technology companies, universities, professional online technical publications, white papers and professionals working in the field.
+		</p>
+		<table id="protocolTable">
+			<tr>
+				<th>Protocol</th>
+				<th>Gate</th>
+				<th>Description</th>
+				<th>Source</th>
+			</tr>
+			<tr>
+				<td>HTTP</td>
+				<td>80</td>
+				<td><strong>H</strong>yper<strong>T</strong>ext <strong>T</strong>ransfer <strong>P</strong>rotocol is a protocol that defines how web servers and browsers should respond to various commands.</td>
+				<td><a href = "https://www.webopedia.com/TERM/H/HTTP.html">source</a></td>
+			</tr>
+			<tr>
+				<td>SSH</td>
+				<td>22</td>
+				<td><strong>S</strong>ecure <strong>Sh</strong>ell is a program to log into another computer over a network, to execute commands in a remote machine, and to move files between machines.</td>
+				<td><a href = "https://www.webopedia.com/TERM/S/SSH.html">source</a></td>
+			</tr>
+			<tr>
+				<td>FTP</td>
+				<td>20/21</td>
+				<td><strong>F</strong>ile <strong>T</strong>ransfer <strong>P</strong>rotocol is a protocol for sharing files over the internet, using TCP/IP protocol.</td>
+				<td><a href = "https://www.webopedia.com/TERM/F/ftp.html">source</a></td>
+			</tr>
+		</table></p>
+		
+		<h2>Question 6</h2>
+	
+		<h3>Explain why the HTML of the first paragraph should be preferred. Illustrate this with an example. Also, identify another pair of HTML constructs for which the same rationale holds.</h3>
+	
+		<p>The paragraphs contain b and strong. In a web browser they look similar (bolded text), but the difference is that bolding is a visual style, while strong is more universal, and works for instance with speech programs. Another similar pair is i and em</p>
+	
+		<h2>Question 7</h2>
+	
+		<h3>Identify one similarity and one difference between the HTML elements span and div.</h3>
+		
+		<p> The span and div tags provide no meaning at all. They are used quite often in conjuction with CSS especially to group HTML chunks together. The span tag is an in-line element and used for a small chunk of HTML inside a line(usually with the paragraph tag), whereas a div is a block-line and used to group larger chunks of code</p>
+	
+		<h2>Question 8</h2>
+	
+		<h3>List potential benefits of using CSS over HTML style markup. (Expected length: 7-8 lines)</h3>
+		
+		<p>Firstly, using CSS style sheets in a separate file from the HTML makes the HTML look much cleaner. The HTML code will contain only data about the website, and will not be cluttered with style sheets, especially since you would have to define separate styles for all parts. With CSS, you can define different styles for all different tags, which you can then call in HTML without cluttering up the code.</p>
+	
+		<h2>Question 9</h2>
+		
+		<h3>How would you expect a Web browser to render an emphasized word (i.e., included in an em element) in a paragraph with an italic font style? Check whether your browser behaves according to your expectation.</h3>
+		
+		<p>Since usually italicized text is emphasized by normalizing it, we would expect that to happen here as well. However making a new html file with an associated css that italicizes all text, the text remained italicized, with an em tag.</p>
+	
+		<h2>Question 10</h2>
+	
+		<h3>Pick two web browsers. What are in your view the key differences between the two browsers?</h3>
+
+		<p>We picked Google Chrome and Internet Explorer. The aging browser is no longer the default browser for Windows 10 and only exists today because some companies need it for legacy applications.It provides a familiar baseline and most users have it installed.However, IE is a relatively unsafe browser, it is slower and lacking features. Specifically, it's HTML5 compliance is low compared to Chrome's almost perfect compliance. In addition, Google chrome supports a wide set of Javascript features that IE could not render.</p>
+		
+		
+		<h1>Questions Lab 2</h1>
+		
+		<h2>Question 1</h2>
+		
+		<h3>Read the article by Axel Schmetzke, (2001),"Web accessibility at university libraries and library schools" (See Reader on Canvas). Schmetzke found that the most prevalent accessibility error is not having ALT texts for images. With which WCAG guideline does this correspond?</h3>
+		
+		<p>Having alt text on images corresponds to the WCAG guideline 1.1, "Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language."</p>
+		
+		<h2>Question 2</h2>
+		<h3>The Web Accessibility checker 'Bobby' that Schmetzke used has been taken offline, but its predecessor WAVE (Links to an external site.)Links to an external site. can be found online. Run the tool on a web site you think should be accessible. Briefly write down your key observations.</h3>
+		
+		<p>We are observing a site that <a href="http://www.livingmadeeasy.org.uk/communication/vision-3621">introduces products for visually impaired people</a>. It should be accessible because it is targeted specifically for people who need assistance and accessibility in their everyday life. Running the site through WAVE finds 0 errors, and 4 warnings. Optimally there should be 0 warnings as well, but by having 0 errors, the developers have clearly had accessibility in mind.</p>
+		
+		<h2>Question 3</h2>
+		
+		<h3>Acquaint yourself with principles of color contrast, e.g. through the Color Contrast Check (Links to an external site.)Links to an external site.. Test three color combinations and write a short report of the results and how these should be interpreted.</h3>
+		
+		<p>Color contrast is an accessibility issue. Colors that are not contrasting enough can cause problems for visually impaired people to tell the content apart from the background. Colors should have a significant enough difference in both brightness and color to be accessible. Comparing a white background and a white text gives clearly the best results, as black and white are significantly different in both brightness and in hue. Dark blue and bright green result in a significant enough brightness contrast so that it would look good on a black and white screen, but fall short on the color contrast, so that it might cause issues for a visually impaired person. Bright green and bright pink together result in a significant color difference, but a very low brightness difference. So someone who has trouble telling colors apart should be able to read it, but it would not look good on a black and white monitor.</p>
+		
+		<h2>Question 4</h2>
+		
+		<h3>Make sure you understand the difference between a Native app versus a (responsive) Web app. Discuss at least one advantage of native apps over web apps and vice versa.</h3>
+		
+		<p>Native apps are apps that are designed and installed on a specific device and/or operating system. Web apps are apps that work over the web without being installed on a device, and is usually accessed through a web browser. Native apps can access more of the device's power it is working on, and can perform faster and better. Web apps on the other hand are compatible with far more devices as they can be accessed over the web regardless of the architecture.</p>
+		
+		<h2>Question 5</h2>
+		
+		<h3>Summarize the key multilingual issues that W3C is addressing within the "Internationalization" activity.</h3>
+		
+		<p>The multilingual issues in internationalization are all about how you write and read differently in different languages. The first issue is different characters. For instance greek, russian, many asian languages etc. use different alphabet than the latin alphabet, so there needs to be support for multiple character sets.
+		The second issue is that in some languages you read and write in a different direction than in english, like right to left, or vertically. International apps and websites need to be built in such a way that if you mix languages written in different ways, they do not interfere with each other.
+		There is also the issue that some languages have significantly different sentence structure, text needs to be made such that if it is translated, the length and structure of the text does not change dramatically.
+		Lastly, culture-specific symbols can cause an issue. Symbols in one culture can mean something completely different in another culture, so when translating text, one must also take care to translate symbols.</p>
+		
+		<h2>Question 6</h2>
+		
+		<h3>What is the IP address of the server running the website at http://www.few.vu.nl? And the IP address behind the site running http://www.cs.vu.nl? Explain how you found the answer. How could the results you find influence the web servers' functionality?</h3>
+		
+		<p>The IP address of the first site is 130.37.164.154. The IP address of the second site is the same, 130.37.164.154. I found the answer by running the site through an <a href="https://www.site24x7.com/find-ip-address-of-web-site.html">online checker.</a></p>
+		
+		<h2>Question 7</h2>
+		
+		<h3>Look up information about the new protocol for IP addresses (IPv6, IP version 6). Describe the main features of this protocol and indicate what the reasons are to move from version 4 to version 6. (Expected length: 1/4 page)</h3>
+		
+		<p>IPv6 uses 128 bits instead of 32 bits for it’s adresses, effectively creating an impossibly large number of available adresses. The original IPv4 had a limited number of adresses that couldn’t keep serving the increasing number of devices with access to the internet. The switch from IPv4 to IPv6 is largely invisible to most computer users.</p>
+		
+		<h2>Question 8</h2>
+		
+		<h3>What are MIME types? Name the most common subtypes of type text. Provide a link to the most authoritative source with the complete list.</h3>
+		
+		<p>MIME stands for Multipurpose Internet Mail Extensions and is a standardized way to indicate the nature and format of a document.The Internet Assigned Numbers Authority(IANA) is the official body responsible to keeping track of all official MIME types. The complete list: https://www.iana.org/assignments/media-types/media-types.xhtml</p>
+		
+		<h2>Question 9</h2>
+		
+		<h3>Make sure you have read the blog post What Is A Web Server? (Links to an external site.)Links to an external site. as described in the Reader on Canvas. Knupp states that the GET method is the most common HTTP request method. Name at least one other HTTP request method and find out what the differences are between GET and the one you picked. Which authoritative source(s) have you used?</h3>
+		
+		<p>Differences between GET and POST:
+
+		1) Reload button: Harmless for GET but for POST, data will be re-submitted
+		2) Bookmark: Possible for GET, not for POST
+		3) Cached: Possible for GET, not for POST
+		4) Encoding type: for GET its application/x-www-form-urlencoded, for POST its application/x-www-form-urlencoded or multipart/form-data. Use multipart encoding for binary data
+		5) History: GET parameters remain in browser history, whereas not saved for POST
+		6) Restrictions on data length: Because the GET method adds data to the URL, that limits the data length as the URL max length is 2048 characters. No restrictions for POST
+		7) Restrictions on data type: Only ASCII characters allowed for GET, No restrictions for POST
+		8) Security: GET is less secure than POST, because the data sent is part of the URL, shouldn’t be used for passwords or other sensitive information. POST data are not stored in browser history or web server logs
+		9) Visibility: Data is visible via URL for GET, not visible for POST
+
+		<a href="https://www.w3schools.com/tags/ref_httpmethods.asp">Source</a></p>
+		
+		<h2>Question 10</h2>
+		
+		<h3>Most of the well-known HTTP web servers serve HTML and other content to end users. But behind the scenes, there are many HTTP servers that provide services for other web sites. To manage who is allowed to do what on these services, they often deploy keys: short sequences of characters that are used to uniquely identify you. We will use an example of such a web site in the assignments, for which your need a key. So please go the page at https://wt.ops.labs.vu.nl/keys and generate a key. Please record the value of the key generated as the answer to this question, so you can use it later in the assignments.</h3>
+	
+		<p>adf12fb0</p>
+	
+		<h1>Questions Lab 3</h1>
+		
+		<h2>Question 1</h2>
+		
+		<h3>Enable the JavaScript console in your favorite browser, so you know you can see all the generated messages. Explain shortly what browser you used and how you have enabled the console.</h3>
+		
+		<p>
+		The browser used here was Google Chrome. The console is opened by either right clicking the site and selecting inspect,
+		and selecting "Console" from the window that opened, or through the key combination of ctrl+shift+j
+		</p>
+  
+		<h2>Question 2</h2>
+  
+		<h3>Show how you can use JavaScript and the DOM API to change the background of the body element to the color red. Also show how you can override the behavior of clicking on an <a> element, using only JavaScript and the DOM API, without other libraries.</h3>
+		
+		<p>See example question 2 in the folder. You can add callers for functions on actions performed on HTML elements to change the background, or an event listener to detect when a link is pressed, and then interrupt the normal action through a JavaScript function.</p>
+	
+		<h2>Question 3</h2>
+	
+		<h3>Compare the use of JQuery to change the behavior of the a element as shown in the example with the code you used in the previous question. List pros and cons of both methods.</h3>
+		
+		<p>With JQuery, adding an event listener to an a tag is simpler, but in essence works the same. It can't really be said that JQuery has any cons compared to pure JS, since JQuery is a library of JS which only adds syntax and functionalities,
+		but does not prevent normal JS commands from running. So, with JQuery you can use JavaScript and JQuery both, but with pure JS you can only use JavaScript.</p>
+		
+		<h2>Question 4</h2>
+		
+		<h3>Describe the major similarities and differences between Python and JavaScript. (if you are more familiar with Java, you may also compare Java to JavaScript)</h3>
+		
+		<p><pre>Differences:
+
+		1	Classical inheritance in Python, Prototypal inheritance in JScript
+		2	JScript is a braces and semicolons language while Python is white-space and indent/block based
+		3	No var keyword in Python, implicit globals in Jscript, both are lexically scoped
+		4	In Python, you can't access private variables like you could in JScript
+		5	There's no undefined error in Python, exceptions are thrown
+		6	Immutable list arrays in Python
+		7	No switch statement in Python but instead you're encouraged to use a dictionary in that manner, sometimes its convenient assigning properties to lambdas and executing them
+		8	Raise & Except used in Python, Throw & Catch in Jscript
+		9	Native Unicode strings in JScript
+		10	Keyword operators such as and, is, and not are used in Python
+		11	Python doesn't support counters such as i++
+		12	Python's for loop is "smart" so you don't need to use a counter for enumerating through lists, nor do you run into prototypal properties inherited from Object.prototype
+		13	Whitespace is part of Python’s design philosophy, not for javascript
+		14	Pythons comes with built in libraries that can be used via the “import” statement
+
+Similarities:
+
+		1 Strings in python work quite similarly to those in Javascript, albeit with added benefits.
+		2 Python’s expression syntax is similar to that of Javascript
+		3 Variables are lexically scoped in both Python and Javascript
+		4 Dictionaries in Python are Similar to Objects in Javascript
+
+		<a href="http://hg.toolness.com/python-for-js-programmers/raw-file/tip/PythonForJsProgrammers.html">source</a></pre></p>
+		
+		<h2>Question 5</h2>
+	
+		<h3>What does the acronym "AJAX" stand for? Explain the role of the term the first "A" refers to.</h3>
+	
+		<p>Asynchronous Javascript and xml. Asynchronous means that, using javascript and XML, only parts of the website can be updated
+		while the user is browsing the site, instead of having to update the whole page, as with HTML requests.</p>
+				
+		<h2>Question 6</h2>
+	
+		<h3>What is the role of the host objects in JavaScript? Name two often used host objects. Why are there no equivalents in Java or Python?</h3>
+	
+		<p>host objects are provided by the enviroment in order to serve a specific purpose to that environment not defined in by the specification.Objects like: window, document, XmlHttpRequest, DOM nodes etc are provided by the browser environment. They are distinct from the built-in objects because not all enviroments will have the same host objects.
+
+		There are no similar objects in Python because javascripts fundamental concept is that every element that can hold properties and methods is an objects, except for primitive data types(not sure, recheck).</p>
+		
+		<h2>Question 7</h2>
+	
+		<h3>Name two objects that are built into the JavaScript language. Briefly explain their role.</h3>
+		
+		<p>The Date Object, used to represent arbitrary dates and times, to get the current system date and to calculate differences between dates.
+
+		The JSON Object, which provides functions to convert to and from JSON text format. Used efficiently in web development</p>
+		
+		<h2>Question 8</h2>
+	
+		<h3>Briefly explain the role of events and event listeners in JavaScript.</h3>
+		
+		<p>Events are things that happen in a HTML site. Events include things such as the page finished loading, page is closed, or the page is interacted with in some way (mouse over, clicking on an element).
+		For Javascript, many functions or commands are ran when the site is interacted with, or when the page has finished loading or is closed.
+		Even listeners are commands to "listen" for a certain event, to see when it happens. After the event listener detects the event, the listener calls for a function.
+		For Javascript, events are important, since many non-static parts of a website are reactions to an event.
+		</p>
+		
+		<h2>Question 9</h2>
+		
+		<h3>Explain in 3 lines the functionality of the autocomplete component that Marks describes.</h3>
+		
+		<p>The autocomplete component is a textbox that appears on the map, where you can type a place name, and the maps application searches google's library of places for a match.
+		The maps API that is linked to the HTML file is extended to include the autocomplete library. Then in the javascript file, an event listener, exclusive for google maps,
+		is added, that listens to the autocomplete being filled and a new place selected. When this happens, the maps application jumps to the location of the selected place and opens an info window.
+		</p>
+		
+		<h2>Question 10</h2>
+	
+		<h3>Map to bermuda</h3>
+
+		<div id="map"></div>
+			<script>
+			function initMap() {
+				var bermuda = {lat: 32.295, lng: -64.797};
+				var map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 4,
+					center: bermuda
+				});
+				var marker = new google.maps.Marker({
+					position: bermuda,
+					map: map
+				});
+			}
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCULGArKIiYy_g_GGCOfWNoOF3dfcrCC08&callback=initMap">
+    </script>
+		
+		<h1>Questions Lab 4</h1>
+		
+		<h2>Question 1</h2>
+		
+		<h3>a. Have a closer look at the term frequency matrix. Given this table, how well do you think the tokenizer did its job? Do you see any room for improvement?</h3>
+		
+		<p>Mostly the tokenizer worked as intended, and the words are correctly identified across all chapters. Only problem is with
+		some words and letters that are counted as separate words, even though they clearly are not words (like the numbers 0 and 3, or _i_).
+		Other than that problem, it looks to work well.</p>
+		
+		<h3>b. Looking at the top 30, does it make sense to include all of them in the stop words list? Explain your answer.</h3>
+
+		<p>Almost all, yes. Two words, t and s, which clearly are not words, don't belong in this list in our opinion.</p>
+		
+		<h3>c. Looking at the top 30, do you think the frequency follows Zipf’s law?</h3>
+		
+		<p>Looking at only the top 30 words, no. Zipf's law expects the number of words to roughly halve with the next word, which clearly does not happen
+		in the case of this text, except for the first two words. So as stated above, following zipf's law should mean that each word</p>
+		
+		<h3>d. Similarly, run h - heaps(alice_index$total) to determine whether Heaps law applies. Explain in your own words what "Heaps’ law applies" means in this case.</h3>
+		
+		<p>Heaps' law definitely applies. The longer the text goes on, the more different words show up, with diminishing returns as the word count increases
+		,that looks exactly like a typical Heaps' law curve.</p>
+		
+		<h2>Question 2</h2>
+		<h3>a. How do you assess the quality of the TF-based search. What can you say about precision and recall?</h3>
+		
+		<p>The only way to assess the quality of any search, including TF-based, is human assessment, or asking the user's feedback on results. Precision means how many of the received results were correct results, and recall means
+		how many of the totally available correct results were found. For purely TF based search, the recall should be high, but presicion may be low as the term searched might be a common one, and might be found all over.</p>
+		
+		<h3>b.Computing the TFIDF matrix takes quite some time. Why is that, do you think?</h3>
+		
+		<p>That is because the entire text's worth of data needs to be processed multiple times. Calculating only the TF matrix needs just one run through as the words are counted, but for TFIDF, the IDF needs to be calculated for each
+		word after the word count, and after that the total value needs to be applied to each word in each chapter based on the previous calculation and the total amount of words.</p>
+		
+		<h3>c. Compare the TF-based search with the TFIDF-based search. What has changed? How do you compare the quality of the searches. What can you say about precision and recall?</h3>
+		
+		<p>Both searches give you different results. TF gives you a raw word count of a spesific word, while TFIDF gives you a score that tells you how informative the word is in any given chapter. With a TF based search, searching for instance a spesific phrase, you would get high recall
+		as you would find all the parts containing any of the words, including the correct phrases, but the presicion would be, depending on the words in question, high to very low. For a similar query using TFIDF, the presicion would be high, as any non-important instances of the words would be
+		discarded immediately, but recall might also be lower, if some instances of the words are deemed unimportant.</p>
+		
+		<h3>d. Alice in Wonderland only has 11 chapters, what can you say about the precision at k where k=5 for both types of searches. That is, what if you would only look at the 5 highest ranked results, and discard the other results as irrelevant.</h3>
+		
+		<p>For TF, the precision and recall would both likely drop, since the search would only return the highest densities of certain words, but not necessarily together. TFIDF would have likely high precision, but not necessarily a high recall, since the top 5 results would likely be
+		correct since they are selected based on the most relevant information, but it might drop out a lot of correct results beyond the top 5.</p>
+		
+		<h3>e. What would happen to precision and recall if you implemented the improvements to the tokenizer you suggested in question 1a.?</h3>
+		
+		<p>They would increase, since non-informative "junk" words would not be included in the search.</p>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1><a href="https://www.facebook.com/nikos.kozanidis.3" onclick="nope()">I am a huge link</a></h1>
+
+<button type="button" onclick="red()">Red</button>
+<button type="button" onclick="blue()">Blue</button>
+<button type="button" onclick="green()">Green</button>
+
+
+
+<script>
+function red() {
+    document.body.style.backgroundColor = "red";
+}
+function blue() {
+    document.body.style.backgroundColor = "blue";
+}
+function green() {
+    document.body.style.backgroundColor = "green";
+}
+function nope() {
+	event.preventDefault();
+}
+</script>
+
+</body>
+</html>

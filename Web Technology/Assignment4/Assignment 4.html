@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment 4: The Reckoning</title>
+	</head>
+	<body>
+	<h1>Self Evaluation Report</h1>
+	<h3>30.1.2018</h3>
+	<h3>Lab 15</h3>
+	<h3>Ilmari Kaskia & Nikos Kozanidis</h3>
+	
+	<h2>Summary</h2>
+	
+	<p>Our website for a webshop for mobile phones is in the end very bare bones and simple, so evaluating the accessibility and usability is quite simple. For accessibility, the website has only a few things that could break the accessibility for users. The website consists mostly of text, with only a few interactive elements. For the layout and color contrast, we tried to make it as contrasting and simple as possible, to allow for greater accessibility. For the interactive parts, they can be considered accessible to most since they conform to how similar items work on different websites. What we could have improved upon however was making it clearer what the form was used for, and what inputs were required. Another thing in our website is the sorting of the tables. If the user does not know that the tables can be sorted, there is nothing indicating that they can be sorted, this is something that could be improved upon.</p>
+	
+	<h2>Guidelines</h2>
+	
+	<p>For our site, I would pick a few relevant ones to be use of color and contrast, since we picked the colors we use on purpose to keep it both easy on the eyes and readable, keyboard accessibility, since you can navigate and use the site with a keyboard all the way,
+	and link purpose, as we define clearly what every link does and where it takes you.</p>
+
+	<h2>Improvement plan</h2>
+	
+	<p>Based on the Appendices A and B, the improvement plan is as follows:<br>
+	- Set img tags in css<br>
+	- Indent css<br>
+	- Hotlink to JS file instead of having it downloaded.</p>
+	
+	<h1>Appendix A</h1>
+	<h2>1.1</h2>
+	
+	<h3>Non-text content</h3>
+	<p>None of the listed non-text content apply in our site.</p>
+	
+	<h2>1.3</h2>
+	
+	<h3>Info and Relationship</h3>
+	<p>Since all our parts are independent of each other and aren't in any spesific order of importance, this criterion can be considered fulfilled.</p>
+	
+	<h3>Meaningful Sequence</h3>
+	<p>Same as above, fulfilled.</p>
+	
+	<h3>Sensory Characteristic</h3>
+	<p>Our table form does rely heavily on being recognizable as such without telling it's purpose outright, so this criterion is not met.</p>
+	
+	<h2>1.4</h2>
+	
+	<h3>Use of Color</h3>
+	<p>Color is only used as a style in our site. Criterion met.</p>
+	
+	<h3>Audio Control</h3>
+	<p>We have no audio, so not applicable.</p>
+	
+	<h3>Contrast</h3>
+	<p>Our website meets the required level of color contrast. Criterion met.</p>
+	
+	<h3>Resize text</h3>
+	<p>We have no option to resize text in our website. Criterion not met.</p>
+	
+	<h3>Images of Text</h3>
+	<p>All our information is pure text. Criterion met.</p>
+	
+	<h2>2.1</h2>
+	
+	<h3>Keyboard accessibility</h3>
+	<p>We have two distinct functions in our website that require user input: sorting the tables, and the form. The form works with just a keyboard
+	with no issues, since you have to type in the data anyway, you can change fields with the tab key, and post with enter. Sorting the tables however
+	requires use of a mouse, since you can't select the table headers through a keyboard to activate them. The page does not fulfill this criterion.</p>
+	
+	<h3>Keyboard trap</h3>
+	<p>If you have selected/highlighted a text field in the form, you can't move away from that part of the website with just the arrow keys, but you can move away with the tab
+	key, which fulfills the criterion.</p>
+	
+	<h2>2.4</h2>
+	
+	<h3>Bypass blocks</h3>
+	<p>Our website can be navigated with the page up and page down keys, and we provide links to different parts of the website at the top of the page. The page fulfills this criterion.</p>
+	
+	<h3>Page titled</h3>
+	<p>The page is titled accordingly, so the criterion is met.</p>
+	
+	<h3>Focus order</h3>
+	<p>Our website is small and simple, with no functionality requiring any previous functionality - no central part is more important than any other.
+	That being said, we start with an introduction, continue on with the main content, and finish with miscellaneous information in the bottom of the page. This criterion is also met.
+	</p>
+	
+	<h3>Link purpose</h3>
+	<p>All our links state where it will take the user. This criterion is met.</p>
+	
+	<h1>Appendix B</h1>
+	<h2>Assignment 1</h2>
+	
+	<h3>fieldset should be used inside a form to group relevant items.</h3>
+	<p>This is a technical detail, which, if changed, would improve the code itself, though with not much change to the website.</p>
+	
+	<h3>Add title, value and or placeholder to the input elements, in order to make it easier for the user to see what he/she needs to input.</h3>
+	<p>This is an accessibility issue, which, if implemented, would make the page more accessible to the user.</p>
+	
+	<h3>img tags width and height should be set using CSS.</h3>
+	<p>Again a technical detail, that results in sloppy code, but has no real impact on the site itself.</p>
+
+	<h3>Missing list-style-type</h3>
+	<p>Technical detail again. Adding it would help with future improvements to the site.</p>
+	
+	<h3>2 errors and 1 warning when testing screen.css in the validator. 5 errors and 1 warning when testing print.css</h3>
+	<p>Technical detail. Code works, but does not validate properly.</p>
+	
+	<h3>Horizontal scrolling should be avoided. Having horizontal scroll on both table and website causes confusion.</h3>
+	<p>This is an accessibility issue, for some devices. It breaks the even structure of the page and could be confusing to some.</p>
+	
+	<h3>You don't explain how to deal with differences between browsers.</h3>
+	<p>Technical issue. As a comment, doesn't have any impact on site whatsoever anyway.</p>
+	
+	<h3>Indentation and whitespace in css file is not coherent, makes it hard to see what constructs belong to what section. No comments.</h3>
+	<p>Technical issue. Code works as intended, but is hard to read.</p>
+	
+	<h2>Assignment 2</h2>
+	
+	<h3>In the reset button javascript handling, you have two get calls, one which removes all <tr> and one that fills the table again.
+	Since both these work with callbacks, it can happen that all the table rows are removed after the table has been updated, leaving an empty table. 
+	The second $.get should be in the success function of the first one.</h3>
+	<p>This could be considered an accessibility issue, since it has the potential to break the table.</p>
+	
+	<h3>Split up the JS file into more functions. See submission description, don't download 3rd party libraries but hotlink them if possible.</h3>
+	<p>A technical issue that would improve the code.</p>
+	
+	<h3>+ Good separation of JS and HTML!</h3>
+	<p>A positive comment on the styling of the code.</p>
+	
+	</body>
+</html>
