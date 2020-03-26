@@ -55,13 +55,11 @@ string hextoAscii(string hex){
 string checksum(string frame) {
     int sum = 0;
     string temp;
-    
-    //adding the "bytes" 2 chars at a time
+
     for(unsigned int i = 0; i < frame.size() ; i += 2){
        sum += hextodec(temp+frame.at(i)+frame.at(i+1));
     }
-    
-    //hex convert the modulo'd sum
+
     stringstream ss;
     ss << hex << sum % 128;
     string s(ss.str());
@@ -72,14 +70,12 @@ string checksum(string frame) {
 //function to print to terminal the errors if any, and the contents of the frame
 void printFrames(bitstream frame, string myadr){
 
-    //incorrect destination adress handling
     if(!frame.destadr.empty()) {
         if(myadr.compare(frame.destadr)!=0) {
             cerr<<"ADDRESS MISMATCH"<<endl;
             cout << myadr << " " << frame.destadr;
             exit(0);
         }
-        //incorrect checksum handling
         if(stoi(frame.checksum,0,16)!=stoi(checksum(frame.destadr+frame.srcadr+frame.len+frame.payload),0,16)) {
               cerr<<"ERROR"<<endl;
               exit(0);
